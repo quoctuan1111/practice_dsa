@@ -17,7 +17,6 @@ class Solution(object):
             if prev:
                 prev.next = head.next
             nextNode = head.next.next
-
             head.next.next = head
             head.next = nextNode
             prev = head

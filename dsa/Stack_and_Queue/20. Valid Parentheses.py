@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        matching = {')': '(', '}': '{', ']': '['}
+        matching = {"(" :")" , "[" :"]", "{" :"}"}
         for c in s:
             if c in matching:
                 stack.append(c)

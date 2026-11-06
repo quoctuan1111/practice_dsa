@@ -7,7 +7,6 @@ class Solution(object):
         """
         heap = [-pile for pile in piles]
         heapq.heapify(heap)
-        ans = 0
         for i in range(k):
             x = heapq.heappop(heap)
             remain = abs(x) - abs(x) // 2

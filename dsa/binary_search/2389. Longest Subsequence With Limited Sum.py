@@ -11,6 +11,7 @@ class Solution(object):
             prefix.append(prefix[-1] + n)
         ans = []
         for q in queries:
+            best = 0
             left = 0
             right = len(prefix) - 1
             while left <= right:

@@ -21,7 +21,7 @@ class Solution(object):
         }
         def bt(index, path):
             if index == len(digits):
-                ans.append("".join(path))
+                ans.append("".join(path)) #reverse list to string
                 return
             letters = phone[digits[index]]
             for letter in letters:
